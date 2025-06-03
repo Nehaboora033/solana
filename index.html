@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="./assets/images/svg/logo.svg">
 
 </head>
 
@@ -16,7 +16,7 @@
     <!-- nav -->
     <nav class="w-full bg-[#F6E300] py-4 top-0 z-30 fixed">
         <div class="container mx-auto flex justify-between items-center px-3">
-            <img src="./assets/images/svg/logo .svg" alt="logo" class="sm:w-full w-9/12 cursor-pointer">
+            <img src="./assets/images/svg/logo.svg" alt="logo" class="cursor-pointer">
             <button
                 class="menu-icon lg:hidden cursor-pointer border-none w-[50px] h-[35px] flex flex-col justify-between z-20  items-center"
                 onclick="menuIcon()">
@@ -48,17 +48,16 @@
     </nav>
     <!-- header -->
     <header>
-        <div
-            class="bg-[url('assets/images/png/header-image.png')] bg-cover bg-no-repeat bg-center h-[343px] mt-[81px] ">
+        <div class="bg-[url('assets/images/png/header-image.png')] bg-cover bg-no-repeat bg-center h-[343px] mt-[81px]">
         </div>
-        <div class="bg-[url('assets/images/png/burgers.png')] bg-cover bg-no-repeat bg-center h-[500px]">
+        <div class="bg-[url('assets/images/png/burgers.png')] bg-cover bg-no-repeat bg-center">
             <h2 class="fw_xl fs_xl text-black text-center mt-[73px] mb-7">WELCOME TO</h2>
             <img src="./assets/images/png/header-logo.png" alt="image" class="block mx-auto">
             <img src="./assets/images/png/open.png" alt="image" class="block mx-auto">
         </div>
     </header>
     <!-- section2 -->
-    <section class=" bg-[#FFF03F]">
+    <div class=" bg-[#FFF03F]">
         <div
             class="container mx-auto flex justify-between xl:gap-32 lg:gap-24 gap-16 px-3 lg:flex-row flex-col-reverse  lg:pt-0 pt-9">
             <div class="lg:w-1/2 lg:mt-[66px]">
@@ -84,9 +83,9 @@
                 <img src="./assets/images/png/section2-img.png" alt="image" class="lg:w-full w-9/12">
             </div>
         </div>
-    </section>
+    </div>
     <!-- section3 -->
-    <section>
+    <div>
         <div class="container mx-auto mt-[114px] flex gap-8 mb-[115px] px-3">
             <div class="w-full grid lg:grid-cols-4  md:grid-cols-3 grid-cols-2 gap-8">
                 <div>
@@ -127,11 +126,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- section4 -->
     <section class="bg-[#F4241E] ">
         <div class="container mx-auto pb-14 flex flex-col items-center px-3">
-            <p class="fw_xl fs_2xl text-white text-center pt-8 mb-8">Supplies</p>
+            <h2 class="fw_xl fs_2xl text-white text-center pt-8 mb-8">Supplies</h2>
             <div class="flex xl:gap-36 lg:gap-16 md:flex-row flex-col md:gap-8 ">
                 <div class="flex flex-col  items-center">
                     <p class="fw_xl fs_2xl text-white text-center">3,313</p>
@@ -155,57 +154,65 @@
 
     <!-- section5 -->
     <section>
-        <h2 class="fw_xl fs_2xl md:text-5xl font-bold text-center pt-16 mb-10">ROADMAP 1.0</h2>
+        <div class="container mx-auto px-3 max-w-[1320px] ">
 
-        <div class="max-w-[1240px] mx-auto relative px-4">
-            <!-- Vertical line (responsive) -->
-            <div
-                class="absolute top-[5%] bottom-0 w-2 bg-[#F4241E] left-8 md:left-1/2 transform md:-translate-x-1/2 z-0">
-            </div>
-
-            <!-- Q4 2021 - Left Card -->
-            <div class="relative w-full md:w-1/2 pb-8 md:pr-20 md:pl-10 md:left-0">
-                <div class="absolute top-0 left-6 md:right-[-14px] md:left-auto w-9 h-9 bg-white rounded-full z-10">
+            <h2 class="fw_xl fs_2xl md:text-5xl font-bold text-center pt-16 mb-10">ROADMAP 1.0</h2>
+    
+            <div class="max-w-[1320px] relative mt-16">
+                <!-- Vertical line (responsive) -->
+                <div
+                    class="absolute top-[5%] bottom-0 w-2 bg-[#F4241E] left-8 md:left-1/2 transform md:-translate-x-1/2 z-0">
                 </div>
-                <div class="bg-white p-6 rounded-xl relative z-10 ml-10 md:ml-0">
-                    <div class="flex gap-2 font-bold text-lg md:text-xl">
-                        <p>Q4</p>
-                        <p>2021</p>
+    
+                <!-- Q4 2021 - Left Card -->
+                <div class="relative w-[89%] md:w-1/2 pb-8 lg:pr-20 md:pr-11 md:pl-10 md:left-0">
+                    <!-- circle -->
+                    <div class="absolute top-0 left-[18px] md:right-[-18px] md:left-auto w-9 h-9 bg-white rounded-full z-10">
                     </div>
-                    <ul class="mt-2 text-lg md:text-xl ">
-                        <li class="mt-4">1. Launch SFFB</li>
-                        <li class="mt-4">2. SELL OUT</li>
-                        <li class="mt-4">3. Apply for secondary marketplace listings</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Q1 2022 - Right Card -->
-            <div class="relative w-full md:w-1/2 pb-8 md:pl-20 md:pr-10 md:left-1/2">
-                <div class="absolute top-0 left-6 md:left-[-18px] w-9 h-9 bg-white rounded-full z-10"></div>
-                <div class="bg-white p-6 rounded-xl relative z-10 ml-10 md:ml-0">
-                    <div class="flex gap-2 font-bold text-lg md:text-xl">
-                        <p>Q1</p>
-                        <p>2022</p>
+                    <!-- card -->
+                    <div class="bg-white p-6 rounded-xl relative z-10 ml-10 md:ml-0 left-9">
+                        <div class="flex gap-2 font-bold  fw_xl fs_lg">
+                            <p>Q4</p>
+                            <p>2021</p>
+                        </div>
+                        <ul class="mt-2  fw_sm fs_md">
+                            <li class="mt-4 ">1. Launch SFFB</li>
+                            <li class="mt-4">2. SELL OUT</li>
+                            <li class="mt-4">3. Apply for secondary marketplace listings</li>
+                        </ul>
                     </div>
-                    <ul class="mt-2 text-lg md:text-xl font-normal">
-                        <li class="mt-4">1. Charity Giveaway</li>
-                        <li class="mt-4">2. Launch Adopt-A-Penguin Program</li>
-                        <li class="mt-4">3. Secure Partnerships</li>
-                    </ul>
                 </div>
+    
+                <!-- Q1 2022 - Right Card -->
+                <div class="relative w-[89%] md:w-1/2 pb-8 lg:pl-20 md:pl-11 md:pr-10 md:left-1/2">
+                    <!-- circle -->
+                    <div class="absolute top-0 left-[18px] md:left-[-18px] w-9 h-9 bg-white rounded-full z-10"></div>
+                    <!-- card -->
+                    <div class="bg-white p-6 rounded-xl relative z-10 ml-10 md:ml-0 left-9">
+                        <div class="flex gap-2 font-bold fw_xl fs_lg">
+                            <p>Q1</p>
+                            <p>2022</p>
+                        </div>
+                        <ul class="mt-2 fw_sm fs_md">
+                            <li class="mt-4">1. Charity Giveaway</li>
+                            <li class="mt-4">2. Launch Adopt-A-Penguin Program</li>
+                            <li class="mt-4">3. Secure Partnerships</li>
+                        </ul>
+                    </div>
+                </div>
+    
             </div>
-
             <!-- Q2 2022 - Left Card -->
-            <div class="relative w-full md:w-1/2 pb-8 md:pr-20 md:pl-10 md:left-0 ">
-                <div class="absolute top-0 left-6 md:right-[-17px] md:left-auto w-9 h-9 bg-white rounded-full z-10">
-                </div>
-                <div class="bg-white p-6 rounded-xl relative z-10 ml-10 md:ml-0">
-                    <div class="flex gap-2 font-bold text-lg md:text-xl">
+            <div class="relative w-[89%] md:w-1/2 pb-8 lg:pr-20 md:pr-11 md:pl-10 md:left-0 ">
+                <!-- circle -->
+                <div class="absolute top-0 left-[18px] md:right-[-18px] md:left-auto w-9 h-9 bg-white rounded-full z-10"></div>
+                <!-- card -->
+                <div class="bg-white p-6 rounded-xl relative z-10 ml-10 md:ml-0 left-9">
+                    <div class="flex gap-2 font-bold fw_xl fs_lg">
                         <p>Q2</p>
                         <p>2022</p>
                     </div>
-                    <ul class="mt-2 text-lg md:text-xl font-normal">
+                    <ul class="mt-2 fw_sm fs_md">
                         <li class="mt-4">1. SFFB Merch Release</li>
                         <li class="mt-4">2. Stay tuned for Roadmap 2.0</li>
                     </ul>
@@ -219,7 +226,7 @@
     <!-- section6 -->
     <section class="bg-[#FFF03F]">
         <div class="container mx-auto pb-[68px] px-3 ">
-            <p class="fw_xl fs_2xl text-center pt-11 mb-10">Team</p>
+            <h2 class="fw_xl fs_2xl text-center pt-11 mb-10">Team</h2>
             <div class="grid lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-9">
                 <div class="flex flex-col justify-center items-center">
                     <img src="./assets/images/png/section3-img1.png" alt="image" class="w-full cursor-pointer">
@@ -247,13 +254,13 @@
     <!-- section7 -->
     <section>
         <div class="container mx-auto px-3">
-            <p class="fw_xl fs_2xl text-center mb-7 pt-12">FAQ</p>
+            <h2 class="fw_xl fs_2xl text-center mb-7 pt-12">FAQ</h2>
             <div class="w-full gap-2 flex flex-col max-w-[992px] mx-auto cursor-pointer">
                 <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item1">
                     <button
-                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
+                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer fw_lg fs_sm text-start gap-3"
                         onclick="toggleAccordion('#item1')">
-                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                        Amet vel eget nisi, sed ut massa turpis sodales nunc.
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
                             class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
@@ -267,9 +274,9 @@
                 </div>
                 <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item2">
                     <button
-                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
+                        class="accordion-header  gap-3 flex justify-between items-center w-full transition-all cursor-pointer fw_lg fs_sm  text-start"
                         onclick="toggleAccordion('#item2')">
-                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                     Amet vel eget nisi, sed ut massa turpis sodales nunc.
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
                             class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
@@ -283,9 +290,9 @@
                 </div>
                 <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item3">
                     <button
-                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
+                        class="accordion-header gap-3 flex justify-between items-center w-full transition-all cursor-pointer fw_lg fs_sm  text-start"
                         onclick="toggleAccordion('#item3')">
-                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                       Amet vel eget nisi, sed ut massa turpis sodales nunc.
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
                             class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
@@ -299,9 +306,9 @@
                 </div>
                 <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item4">
                     <button
-                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
+                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer fw_lg fs_sm gap-3 text-start"
                         onclick="toggleAccordion('#item4')">
-                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                       Amet vel eget nisi, sed ut massa turpis sodales nunc.
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
                             class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
@@ -315,9 +322,9 @@
                 </div>
                 <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item5">
                     <button
-                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
+                        class="accordion-header gap-3 flex justify-between items-center w-full transition-all cursor-pointer fw_lg fs_sm  text-start"
                         onclick="toggleAccordion('#item5')">
-                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                        Amet vel eget nisi, sed ut massa turpis sodales nunc.
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
                             class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
