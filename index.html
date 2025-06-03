@@ -14,35 +14,42 @@
 
 <body class="h-sreen bg-[#F6E300]">
     <!-- nav -->
-    <nav class="w-full bg-[#F6E300] py-4 top-0 z-30">
-        <div class="container mx-auto flex justify-between items-center">
-            <div>
-                <img src="./assets/images/svg/logo .svg" alt="logo">
-            </div>
-            <button class="menu-icon lg:hidden cursor-pointer border-none w-[50px] h-[35px] flex flex-col justify-between z-20  items-center" onclick="menuIcon()">
+    <nav class="w-full bg-[#F6E300] py-4 top-0 z-30 fixed">
+        <div class="container mx-auto flex justify-between items-center px-3">
+            <img src="./assets/images/svg/logo .svg" alt="logo" class="sm:w-full w-9/12 cursor-pointer">
+            <button
+                class="menu-icon lg:hidden cursor-pointer border-none w-[50px] h-[35px] flex flex-col justify-between z-20  items-center"
+                onclick="menuIcon()">
                 <span class="w-full h-1 bg-[#F4241E] rounded-md transition-all"></span>
                 <span class="w-full h-1 bg-[#F4241E] rounded-md transition-all"></span>
                 <span class="w-full h-1 bg-[#F4241E] rounded-md transition-all"></span>
             </button>
-            <div class="flex gap-8 items-center max-lg:flex-col lg:flex-row max-lg:fixed max-lg:bg-white max-lg:h-screen max-lg:-right-full max-lg:top-0 max-lg:w-full menu-list  transition-all max-lg:justify-center ">
-                    <a href=""class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Home</a>
-                    <a href="" class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear text-nowrap hover:font-semibold">AboutUs</a>
-                    <a href="" class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Tokenomics</a>
-                    
-                    <a href="" class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Roadmap</a>
-                    
-                    <a href=""class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Contact</a>
-                    <button
-                        class="fw_md fs_md text-[#F43C1A] cursor-pointer transition-colors ease-linear hover:bg-[#F4241E] hover:text-white  bg-white py-3 px-8 rounded-[10px] text-nowrap">Connect
-                        Wallet
-                    </button>
+            <div
+                class="flex gap-8 items-center max-lg:flex-col lg:flex-row max-lg:fixed max-lg:bg-white max-lg:h-screen max-lg:-right-full max-lg:top-0 max-lg:w-7/12 menu-list  transition 120ms ease-linearlinear max-lg:justify-center ">
+                <a href=""
+                    class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Home</a>
+                <a href=""
+                    class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear text-nowrap hover:font-semibold">AboutUs</a>
+                <a href=""
+                    class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Tokenomics</a>
+
+                <a href=""
+                    class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Roadmap</a>
+
+                <a href=""
+                    class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Contact</a>
+                <button
+                    class="fw_md fs_md text-[#F43C1A] cursor-pointer transition-colors ease-linear hover:bg-[#F4241E] hover:text-white  bg-white py-3 px-8 rounded-[10px] text-nowrap">Connect
+                    Wallet
+                </button>
             </div>
         </div>
 
     </nav>
     <!-- header -->
     <header>
-        <div class="bg-[url('assets/images/png/header-image.png')] bg-cover bg-no-repeat bg-center h-[343px] ">
+        <div
+            class="bg-[url('assets/images/png/header-image.png')] bg-cover bg-no-repeat bg-center h-[343px] mt-[81px] ">
         </div>
         <div class="bg-[url('assets/images/png/burgers.png')] bg-cover bg-no-repeat bg-center h-[500px]">
             <h2 class="fw_xl fs_xl text-black text-center mt-[73px] mb-7">WELCOME TO</h2>
@@ -55,7 +62,7 @@
         <div
             class="container mx-auto flex justify-between xl:gap-32 lg:gap-24 gap-16 px-3 lg:flex-row flex-col-reverse  lg:pt-0 pt-9">
             <div class="lg:w-1/2 lg:mt-[66px]">
-                <p class="text-black fw_xl fs_2xl lg:text-start text-center whitespace-nowrap">It was popularised</p>
+                <p class="text-black fw_xl fs_2xl lg:text-start text-center md:whitespace-nowrap">It was popularised</p>
                 <p class="fw_sm fs_sm mt-6 mb-10 lg:max-w-[590px] w-full">Have you heard? We're hiring! We have 3,333
                     working positions to fill
                     on the Solana blockchain. Once all
@@ -80,50 +87,50 @@
     </section>
     <!-- section3 -->
     <section>
-        <div class="container mx-auto mt-[114px] flex gap-8 mb-[115px] px-4">
+        <div class="container mx-auto mt-[114px] flex gap-8 mb-[115px] px-3">
             <div class="w-full grid lg:grid-cols-4  md:grid-cols-3 grid-cols-2 gap-8">
                 <div>
-                    <img src="./assets/images/png/section3-img1.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img1.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img2.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img2.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img3.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img3.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img4.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img4.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img5.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img5.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img6.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img6.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img7.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img7.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img8.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img8.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img9.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img9.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img10.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img10.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img11.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img11.png" alt="image" class="w-full cursor-pointer">
                 </div>
                 <div>
-                    <img src="./assets/images/png/section3-img12.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img12.png" alt="image" class="w-full cursor-pointer">
                 </div>
             </div>
         </div>
     </section>
     <!-- section4 -->
     <section class="bg-[#F4241E] ">
-        <div class="container mx-auto pb-14 flex flex-col items-center px-6">
+        <div class="container mx-auto pb-14 flex flex-col items-center px-3">
             <p class="fw_xl fs_2xl text-white text-center pt-8 mb-8">Supplies</p>
             <div class="flex xl:gap-36 lg:gap-16 md:flex-row flex-col md:gap-8 ">
                 <div class="flex flex-col  items-center">
@@ -150,30 +157,87 @@
     <section>
         <h2 class="fw_xl fs_2xl md:text-5xl font-bold text-center pt-16 mb-10">ROADMAP 1.0</h2>
 
+        <div class="max-w-[1240px] mx-auto relative px-4">
+            <!-- Vertical line (responsive) -->
+            <div
+                class="absolute top-[5%] bottom-0 w-2 bg-[#F4241E] left-8 md:left-1/2 transform md:-translate-x-1/2 z-0">
+            </div>
+
+            <!-- Q4 2021 - Left Card -->
+            <div class="relative w-full md:w-1/2 pb-8 md:pr-20 md:pl-10 md:left-0">
+                <div class="absolute top-0 left-6 md:right-[-14px] md:left-auto w-9 h-9 bg-white rounded-full z-10">
+                </div>
+                <div class="bg-white p-6 rounded-xl relative z-10 ml-10 md:ml-0">
+                    <div class="flex gap-2 font-bold text-lg md:text-xl">
+                        <p>Q4</p>
+                        <p>2021</p>
+                    </div>
+                    <ul class="mt-2 text-lg md:text-xl ">
+                        <li class="mt-4">1. Launch SFFB</li>
+                        <li class="mt-4">2. SELL OUT</li>
+                        <li class="mt-4">3. Apply for secondary marketplace listings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q1 2022 - Right Card -->
+            <div class="relative w-full md:w-1/2 pb-8 md:pl-20 md:pr-10 md:left-1/2">
+                <div class="absolute top-0 left-6 md:left-[-18px] w-9 h-9 bg-white rounded-full z-10"></div>
+                <div class="bg-white p-6 rounded-xl relative z-10 ml-10 md:ml-0">
+                    <div class="flex gap-2 font-bold text-lg md:text-xl">
+                        <p>Q1</p>
+                        <p>2022</p>
+                    </div>
+                    <ul class="mt-2 text-lg md:text-xl font-normal">
+                        <li class="mt-4">1. Charity Giveaway</li>
+                        <li class="mt-4">2. Launch Adopt-A-Penguin Program</li>
+                        <li class="mt-4">3. Secure Partnerships</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Q2 2022 - Left Card -->
+            <div class="relative w-full md:w-1/2 pb-8 md:pr-20 md:pl-10 md:left-0 ">
+                <div class="absolute top-0 left-6 md:right-[-17px] md:left-auto w-9 h-9 bg-white rounded-full z-10">
+                </div>
+                <div class="bg-white p-6 rounded-xl relative z-10 ml-10 md:ml-0">
+                    <div class="flex gap-2 font-bold text-lg md:text-xl">
+                        <p>Q2</p>
+                        <p>2022</p>
+                    </div>
+                    <ul class="mt-2 text-lg md:text-xl font-normal">
+                        <li class="mt-4">1. SFFB Merch Release</li>
+                        <li class="mt-4">2. Stay tuned for Roadmap 2.0</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
 
     </section>
     <!-- section6 -->
     <section class="bg-[#FFF03F]">
-        <div class="container mx-auto pb-[68px] ">
+        <div class="container mx-auto pb-[68px] px-3 ">
             <p class="fw_xl fs_2xl text-center pt-11 mb-10">Team</p>
             <div class="grid lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-9">
                 <div class="flex flex-col justify-center items-center">
-                    <img src="./assets/images/png/section3-img1.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img1.png" alt="image" class="w-full cursor-pointer">
                     <p class="fw_xl fs_lg  mt-[26px]">Jhone Doe</p>
                     <p class="fw_sm fs_sm">Manager</p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <img src="./assets/images/png/section3-img2.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img2.png" alt="image" class="w-full cursor-pointer">
                     <p class="fw_xl fs_lg mt-[26px]">Jhone Doe</p>
                     <p class="fw_sm fs_sm">Manager</p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <img src="./assets/images/png/section3-img3.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img3.png" alt="image" class="w-full cursor-pointer">
                     <p class="fw_xl fs_lg  mt-[26px]">Jhone Doe</p>
                     <p class="fw_sm fs_sm">Manager</p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <img src="./assets/images/png/section3-img4.png" alt="image" class="w-full">
+                    <img src="./assets/images/png/section3-img4.png" alt="image" class="w-full cursor-pointer">
                     <p class="fw_xl fs_lg  mt-[26px]">Jhone Doe</p>
                     <p class="fw_sm fs_sm">Manager</p>
                 </div>
@@ -182,15 +246,16 @@
     </section>
     <!-- section7 -->
     <section>
-        <div class="container mx-auto">
+        <div class="container mx-auto px-3">
             <p class="fw_xl fs_2xl text-center mb-7 pt-12">FAQ</p>
-            <div class="w-full gap-2 flex flex-col max-w-[992px] mx-auto">
-                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item1">
-                    <button class="accordion-header flex justify-between items-center w-full transition-all"
+            <div class="w-full gap-2 flex flex-col max-w-[992px] mx-auto cursor-pointer">
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item1">
+                    <button
+                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
                         onclick="toggleAccordion('#item1')">
-                        <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
-                            class="arrow transition-transform duration-300">
+                            class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out">
@@ -200,12 +265,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item2">
-                    <button class="accordion-header flex justify-between items-center w-full transition-all"
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item2">
+                    <button
+                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
                         onclick="toggleAccordion('#item2')">
-                        <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
-                            class="arrow transition-transform duration-300">
+                            class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out">
@@ -215,12 +281,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item3">
-                    <button class="accordion-header flex justify-between items-center w-full transition-all"
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item3">
+                    <button
+                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
                         onclick="toggleAccordion('#item3')">
-                        <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
-                            class="arrow transition-transform duration-300">
+                            class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out">
@@ -230,12 +297,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item4">
-                    <button class="accordion-header flex justify-between items-center w-full transition-all"
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item4">
+                    <button
+                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
                         onclick="toggleAccordion('#item4')">
-                        <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
-                            class="arrow transition-transform duration-300">
+                            class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out">
@@ -245,12 +313,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item5">
-                    <button class="accordion-header flex justify-between items-center w-full transition-all"
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4 cursor-pointer" id="item5">
+                    <button
+                        class="accordion-header flex justify-between items-center w-full transition-all cursor-pointer"
                         onclick="toggleAccordion('#item5')">
-                        <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                        <p class="fw_lg fs_sm cursor-pointer">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
-                            class="arrow transition-transform duration-300">
+                            class="arrow transition-transform duration-300 cursor-pointer">
                     </button>
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out">
@@ -265,12 +334,13 @@
     </section>
     <!-- section8 -->
     <footer>
-        <div class="container mx-auto">
-            <img src="./assets/images/svg/footer-logo.svg" alt="logo" class="block mx-auto mt-20">
+        <div class="container mx-auto px-12">
+            <img src="./assets/images/svg/footer-logo.svg" alt="logo" class="block mx-auto mt-20 cursor-pointer">
             <div class="mt-7 flex items-center justify-center gap-12 mb-[52px]">
-                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="cursor-pointer group" width="72" height="72" viewBox="0 0 72 72" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_34717_2781)">
-                        <path
+                        <path class="group-hover:fill-white duration-300"
                             d="M60.4915 13.3531C55.8581 11.2267 50.969 9.70911 45.946 8.83806C45.9005 8.8304 45.8538 8.83702 45.8122 8.85701C45.7706 8.877 45.7362 8.90939 45.7138 8.94971C45.0841 10.0662 44.3874 11.5265 43.9006 12.6698C38.4862 11.8481 32.9788 11.8481 27.5643 12.6698C27.0213 11.3962 26.4071 10.1542 25.7244 8.94971C25.7015 8.90983 25.667 8.87782 25.6256 8.85789C25.5841 8.83796 25.5376 8.83105 25.4922 8.83806C20.468 9.70445 15.5778 11.2229 10.9467 13.3531C10.9071 13.3682 10.8739 13.3966 10.8529 13.4335C1.59062 27.2733 -0.950484 40.7738 0.295504 54.1045C0.29997 54.167 0.340163 54.2296 0.389288 54.2698C5.78287 58.265 11.8157 61.3154 18.2306 63.2909C18.2759 63.3052 18.3246 63.3047 18.3695 63.2894C18.4145 63.2741 18.4534 63.2449 18.4807 63.206C19.8562 61.3304 21.0798 59.352 22.1338 57.2709C22.1558 57.228 22.1633 57.1792 22.1552 57.1317C22.1472 57.0842 22.124 57.0406 22.0891 57.0074C22.0661 56.9856 22.0387 56.9688 22.0088 56.9582C20.0847 56.2188 18.2212 55.3303 16.4353 54.301C16.3854 54.2728 16.3483 54.2264 16.3317 54.1715C16.3151 54.1166 16.3202 54.0575 16.346 54.0063C16.3612 53.973 16.3842 53.9439 16.413 53.9214C16.7881 53.6401 17.1632 53.3453 17.5205 53.0506C17.5521 53.0252 17.5899 53.0089 17.6301 53.0034C17.6702 52.9979 17.711 53.0034 17.7483 53.0193C29.4445 58.3605 42.1053 58.3605 53.6587 53.0193C53.6972 53.0026 53.7396 52.9967 53.7813 53.0022C53.823 53.0077 53.8624 53.0244 53.8953 53.0506C54.2526 53.3453 54.6278 53.6401 55.0029 53.9214C55.0333 53.9436 55.0577 53.973 55.074 54.007C55.0902 54.041 55.0978 54.0784 55.096 54.116C55.0942 54.1536 55.0832 54.1902 55.0638 54.2225C55.0444 54.2548 55.0174 54.2818 54.985 54.301C53.2032 55.3398 51.3373 56.2271 49.4071 56.9538C49.3763 56.9649 49.3484 56.9827 49.3252 57.0058C49.3021 57.029 49.2843 57.057 49.2731 57.0877C49.2628 57.1176 49.2587 57.1492 49.261 57.1807C49.2633 57.2122 49.272 57.2428 49.2865 57.2709C50.3583 59.3475 51.5865 61.3304 52.9352 63.206C52.9624 63.2449 53.0014 63.2741 53.0463 63.2894C53.0913 63.3047 53.14 63.3052 53.1853 63.2909C59.6109 61.3216 65.6535 58.2708 71.0534 54.2698C71.0804 54.251 71.1029 54.2265 71.1191 54.1978C71.1354 54.1692 71.1449 54.1373 71.1471 54.1045C72.6388 38.6927 68.6507 25.3039 60.5808 13.438C60.5727 13.4184 60.5605 13.4007 60.5451 13.3861C60.5298 13.3714 60.5115 13.3602 60.4915 13.3531ZM23.88 45.9855C20.3564 45.9855 17.458 42.7522 17.458 38.7865C17.458 34.8163 20.3028 31.5829 23.88 31.5829C27.484 31.5829 30.3555 34.8431 30.3019 38.7865C30.3019 42.7522 27.4572 45.9855 23.88 45.9855ZM47.6207 45.9855C44.1016 45.9855 41.1988 42.7522 41.1988 38.7865C41.1988 34.8163 44.0435 31.5829 47.6207 31.5829C51.2247 31.5829 54.1008 34.8431 54.0427 38.7865C54.0427 42.7522 51.2247 45.9855 47.6207 45.9855Z"
                             fill="#FF0000" />
                     </g>
@@ -281,8 +351,9 @@
                     </defs>
                 </svg>
 
-                <svg width="68" height="56" viewBox="0 0 68 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
+                <svg class="cursor-pointer group" width="68" height="56" viewBox="0 0 68 56" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="group-hover:fill-white duration-300"
                         d="M67.8461 7.06762C65.3601 8.16921 62.6895 8.91353 59.8819 9.24996C62.7788 7.51657 64.9461 4.78842 65.9793 1.57455C63.2577 3.19118 60.2789 4.32911 57.1726 4.93887C55.0837 2.70849 52.3168 1.23016 49.3016 0.733396C46.2864 0.236632 43.1916 0.749228 40.4976 2.1916C37.8036 3.63397 35.6611 5.92543 34.4029 8.71019C33.1446 11.495 32.8409 14.6172 33.539 17.5923C28.0241 17.3154 22.6291 15.882 17.7041 13.3851C12.7791 10.8882 8.43414 7.38369 4.95121 3.09892C3.7603 5.15324 3.07553 7.53505 3.07553 10.0717C3.0742 12.3552 3.63654 14.6038 4.71267 16.6179C5.78879 18.632 7.34542 20.3493 9.24444 21.6176C7.04208 21.5475 4.88831 20.9524 2.96239 19.8818V20.0604C2.96217 23.2632 4.07003 26.3674 6.098 28.8464C8.12597 31.3253 10.9491 33.0263 14.0885 33.6606C12.0454 34.2135 9.90342 34.295 7.82428 33.8988C8.71001 36.6546 10.4353 39.0644 12.7587 40.791C15.0821 42.5175 17.8872 43.4742 20.7814 43.5273C15.8684 47.3841 9.80085 49.4762 3.55487 49.467C2.44846 49.4673 1.34298 49.4026 0.244141 49.2734C6.58417 53.3498 13.9644 55.5133 21.5019 55.5049C47.0171 55.5049 60.9656 34.3722 60.9656 16.0441C60.9656 15.4486 60.9507 14.8472 60.9239 14.2518C63.6371 12.2897 65.9791 9.85999 67.8401 7.07655L67.8461 7.06762Z"
                         fill="#FF0000" />
                 </svg>
