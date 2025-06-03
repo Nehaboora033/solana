@@ -10,10 +10,35 @@
 .accordion-item.active .accordion-content {
     max-height: 150px;
     padding-top: 1.25rem;
-    /* 20px */
 }
 
 .accordion-item.active .arrow {
     transform: rotate(-180deg);
     transition: all 100ms ease-in-out;
+}
+
+.menu-list.show {
+    right: 0;
+}
+
+@media(max-width:1024px) {
+
+    .activeNavBar .menu-icon span:first-child {
+        transform: rotate(45deg);
+        transform-origin: left;
+    }
+
+    .activeNavBar .menu-icon span:nth-child(2) {
+        display: none;
+        pointer-events: none;
+    }
+
+    .activeNavBar .menu-icon span:last-child {
+        transform: rotate(-45deg);
+        transform-origin: left;
+    }
+
+    .activeNavBar .menu-icon {
+        height: 40px;
+    }
 }

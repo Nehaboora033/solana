@@ -15,21 +15,27 @@
 <body class="h-sreen bg-[#F6E300]">
     <!-- nav -->
     <nav class="w-full bg-[#F6E300] py-4 top-0 z-30">
-        <div class="container mx-auto flex justify-between">
+        <div class="container mx-auto flex justify-between items-center">
             <div>
                 <img src="./assets/images/svg/logo .svg" alt="logo">
             </div>
-            <div class="flex gap-9 ">
-                <ul class="flex items-center gap-9">
-                    <li><a href="" class="fw_sm fs_sm hover:text-[#F43C1A]">Home</a></li>
-                    <li><a href="" class="fw_sm fs_sm hover:text-[#F43C1A] text-nowrap">About Us</a></li>
-                    <li><a href="" class="fw_sm fs_sm hover:text-[#F43C1A]">Tokenomics</a></li>
-                    <li><a href="" class="fw_sm fs_sm hover:text-[#F43C1A]">Roadmap</a></li>
-                    <li><a href="" class="fw_sm fs_sm hover:text-[#F43C1A]">Contact</a></li>
-                </ul>
-                <button
-                    class="fw_md fs_md text-[#F43C1A] cursor-pointer transition-all bg-white py-3 px-8 rounded-[10px] text-nowrap">Connect
-                    Wallet</button>
+            <button class="menu-icon lg:hidden cursor-pointer border-none w-[50px] h-[35px] flex flex-col justify-between z-20  items-center" onclick="menuIcon()">
+                <span class="w-full h-1 bg-[#F4241E] rounded-md transition-all"></span>
+                <span class="w-full h-1 bg-[#F4241E] rounded-md transition-all"></span>
+                <span class="w-full h-1 bg-[#F4241E] rounded-md transition-all"></span>
+            </button>
+            <div class="flex gap-8 items-center max-lg:flex-col lg:flex-row max-lg:fixed max-lg:bg-white max-lg:h-screen max-lg:-right-full max-lg:top-0 max-lg:w-full menu-list  transition-all max-lg:justify-center ">
+                    <a href=""class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Home</a>
+                    <a href="" class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear text-nowrap hover:font-semibold">AboutUs</a>
+                    <a href="" class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Tokenomics</a>
+                    
+                    <a href="" class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Roadmap</a>
+                    
+                    <a href=""class="font-normal fs_sm hover:text-[#F43C1A] transition-colors ease-linear hover:font-semibold">Contact</a>
+                    <button
+                        class="fw_md fs_md text-[#F43C1A] cursor-pointer transition-colors ease-linear hover:bg-[#F4241E] hover:text-white  bg-white py-3 px-8 rounded-[10px] text-nowrap">Connect
+                        Wallet
+                    </button>
             </div>
         </div>
 
@@ -46,10 +52,12 @@
     </header>
     <!-- section2 -->
     <section class=" bg-[#FFF03F]">
-        <div class="container mx-auto flex justify-between">
-            <div class="w-[591px] mt-[66px]">
-                <p class="text-black fw_xl fs_2xl ">It was popularised</p>
-                <p class="fw_sm fs_sm mt-6 mb-10">Have you heard? We're hiring! We have 3,333 working positions to fill
+        <div
+            class="container mx-auto flex justify-between xl:gap-32 lg:gap-24 gap-16 px-3 lg:flex-row flex-col-reverse  lg:pt-0 pt-9">
+            <div class="lg:w-1/2 lg:mt-[66px]">
+                <p class="text-black fw_xl fs_2xl lg:text-start text-center whitespace-nowrap">It was popularised</p>
+                <p class="fw_sm fs_sm mt-6 mb-10 lg:max-w-[590px] w-full">Have you heard? We're hiring! We have 3,333
+                    working positions to fill
                     on the Solana blockchain. Once all
                     positions are
                     filled it's crucial to stay on your toes because the corporate penguins are coming! Any penguins
@@ -58,19 +66,22 @@
                     floor when corporate arrives will be immediately fired and swept away! This makes SFFB a
                     deflationary
                     collection until
-                    we reach a maximum staff of 1,666 mcnoots in total.</p>
-                <button class="fw_md fs_md font-family text-white bg-[#F4241E] rounded-[10px] py-[15px] px-8 ">DISCOVER
-                    MORE</button>
+                    we reach a maximum staff of 1,666 mcnoots in total.
+                </p>
+                <button
+                    class="fw_md fs_md font-family text-white bg-[#F4241E] rounded-[10px] py-[15px] px-8  mb-16 hover:text-[#F4241E] hover:bg-white transition-colors 100ms ease-linear">DISCOVER
+                    MORE
+                </button>
             </div>
-            <div class="w-5/12">
-                <img src="./assets/images/png/section2-img.png" alt="image" class="w-full">
+            <div class="lg:w-1/2 flex items-center justify-center">
+                <img src="./assets/images/png/section2-img.png" alt="image" class="lg:w-full w-9/12">
             </div>
         </div>
     </section>
     <!-- section3 -->
     <section>
-        <div class="container mx-auto mt-[114px] flex gap-8 mb-[115px]">
-            <div class="w-full grid  grid-cols-4 gap-8">
+        <div class="container mx-auto mt-[114px] flex gap-8 mb-[115px] px-4">
+            <div class="w-full grid lg:grid-cols-4  md:grid-cols-3 grid-cols-2 gap-8">
                 <div>
                     <img src="./assets/images/png/section3-img1.png" alt="image" class="w-full">
                 </div>
@@ -112,36 +123,40 @@
     </section>
     <!-- section4 -->
     <section class="bg-[#F4241E] ">
-        <div class="container mx-auto pb-14 flex flex-col items-center">
+        <div class="container mx-auto pb-14 flex flex-col items-center px-6">
             <p class="fw_xl fs_2xl text-white text-center pt-8 mb-8">Supplies</p>
-            <div class="flex gap-36">
-                <div>
+            <div class="flex xl:gap-36 lg:gap-16 md:flex-row flex-col md:gap-8 ">
+                <div class="flex flex-col  items-center">
                     <p class="fw_xl fs_2xl text-white text-center">3,313</p>
-                    <p class="fw_sm fs_sm text-white">Public Sale</p>
+                    <p class="fw_sm fs_sm text-white whitespace-nowrap ">Public Sale</p>
                 </div>
-                <div>
+                <div class="flex flex-col  items-center">
                     <p class="fw_xl fs_2xl text-white text-center">15</p>
-                    <p class="fw_sm fs_sm text-white">Community Giveaways</p>
+                    <p class="fw_sm fs_sm text-white whitespace-nowrap">Community Giveaways</p>
                 </div>
-                <div>
+                <div class="flex flex-col  items-center">
                     <p class="fw_xl fs_2xl text-white text-center">5</p>
-                    <p class="fw_sm fs_sm text-white">Marketing / Influencers</p>
+                    <p class="fw_sm fs_sm text-white whitespace-nowrap">Marketing/Influencers</p>
                 </div>
-                <div>
+                <div class="flex flex-col  items-center">
                     <p class="fw_xl fs_2xl text-white text-center">15</p>
-                    <p class="fw_sm fs_sm text-white">Maximum Supply</p>
+                    <p class="fw_sm fs_sm text-white whitespace-nowrap">Maximum Supply</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- section5 -->
+    <section>
+        <h2 class="fw_xl fs_2xl md:text-5xl font-bold text-center pt-16 mb-10">ROADMAP 1.0</h2>
 
+
+    </section>
     <!-- section6 -->
-    <section clss="bg-[#FFF03F]">
-        <div class="container mx-auto pb-[68px]">
-            <p class="fw_xl fs_2xl text-center mt-11">Team</p>
-            <div class="grid grid-cols-4 gap-9">
+    <section class="bg-[#FFF03F]">
+        <div class="container mx-auto pb-[68px] ">
+            <p class="fw_xl fs_2xl text-center pt-11 mb-10">Team</p>
+            <div class="grid lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-9">
                 <div class="flex flex-col justify-center items-center">
                     <img src="./assets/images/png/section3-img1.png" alt="image" class="w-full">
                     <p class="fw_xl fs_lg  mt-[26px]">Jhone Doe</p>
@@ -168,9 +183,9 @@
     <!-- section7 -->
     <section>
         <div class="container mx-auto">
-            <p class="text-2xl font-bold text-center mb-7">FAQ</p>
+            <p class="fw_xl fs_2xl text-center mb-7 pt-12">FAQ</p>
             <div class="w-full gap-2 flex flex-col max-w-[992px] mx-auto">
-                <div class="accordion-item bg-[#FFF03F] mx-auto p-8" id="item1">
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item1">
                     <button class="accordion-header flex justify-between items-center w-full transition-all"
                         onclick="toggleAccordion('#item1')">
                         <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
@@ -185,9 +200,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#FFF03F] mx-auto p-8" id="item1">
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item2">
                     <button class="accordion-header flex justify-between items-center w-full transition-all"
-                        onclick="toggleAccordion('#item1')">
+                        onclick="toggleAccordion('#item2')">
                         <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
                             class="arrow transition-transform duration-300">
@@ -200,24 +215,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#FFF03F] mx-auto p-8" id="item1">
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item3">
                     <button class="accordion-header flex justify-between items-center w-full transition-all"
-                        onclick="toggleAccordion('#item1')">
-                        <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
-                        <img src="./assets/images/svg/arrow.svg" alt="arrow"
-                            class="arrow transition-transform duration-300">
-                    </button>
-                    <div
-                        class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out">
-                        <p class="fw_sm fs_sm -mt-3">
-                            Enim scelerisque quisque egestas velit, eget tempus, arcu pulvinar in. Quis sed at sodales
-                            aliquam. Amet fermentum, lectus nulla tincidunt egestas.
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion-item bg-[#FFF03F] mx-auto p-8" id="item1">
-                    <button class="accordion-header flex justify-between items-center w-full transition-all"
-                        onclick="toggleAccordion('#item1')">
+                        onclick="toggleAccordion('#item3')">
                         <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
                             class="arrow transition-transform duration-300">
@@ -230,9 +230,24 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item bg-[#FFF03F] mx-auto p-8" id="item1">
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item4">
                     <button class="accordion-header flex justify-between items-center w-full transition-all"
-                        onclick="toggleAccordion('#item1')">
+                        onclick="toggleAccordion('#item4')">
+                        <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
+                        <img src="./assets/images/svg/arrow.svg" alt="arrow"
+                            class="arrow transition-transform duration-300">
+                    </button>
+                    <div
+                        class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out">
+                        <p class="fw_sm fs_sm mt-3">
+                            Enim scelerisque quisque egestas velit, eget tempus, arcu pulvinar in. Quis sed at sodales
+                            aliquam. Amet fermentum, lectus nulla tincidunt egestas.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item bg-[#FFF03F] mx-auto sm:p-8 p-4" id="item5">
+                    <button class="accordion-header flex justify-between items-center w-full transition-all"
+                        onclick="toggleAccordion('#item5')">
                         <p class="fw_lg fs_sm">Amet vel eget nisi, sed ut massa turpis sodales nunc.</p>
                         <img src="./assets/images/svg/arrow.svg" alt="arrow"
                             class="arrow transition-transform duration-300">
@@ -250,7 +265,7 @@
     </section>
     <!-- section8 -->
     <footer>
-        <div class="container">
+        <div class="container mx-auto">
             <img src="./assets/images/svg/footer-logo.svg" alt="logo" class="block mx-auto mt-20">
             <div class="mt-7 flex items-center justify-center gap-12 mb-[52px]">
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -273,8 +288,6 @@
                 </svg>
             </div>
             <p class="fw_sm fs_sm text-center">@Copyright 2021</p>
-
-
         </div>
     </footer>
 
